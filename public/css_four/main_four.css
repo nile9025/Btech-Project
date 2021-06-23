@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* custom properties */
+
+:root {
+    --leading: 2em;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: large;
+}
+.hero-bg{
+    background: rgb(45, 121, 113);
+    /* color: rgb(179, 144, 144); */
+    text-align: center;
+    padding: 4em; 
+}
+
+.informa {
+    padding: 2em;
+    background-color: wheat;
+    margin: 0;
+}

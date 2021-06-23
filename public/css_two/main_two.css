@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* custom properties */
+
+:root {
+    --leading: 2em;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.hero-bg{
+    background: orange url('../images_two/blackcarone.jpg');
+    background-position: 1% 0%;
+    color: white;
+    text-align: center;
+    padding-bottom: 4em; 
+}
+
+header{
+    padding: 1em 0;
+}
+
+.hero-bg a {
+    color: darkred;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section{
+    margin: 0 1em;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em;
+}
+
+h1 span{
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1 span::before{
+    content: ' ';
+    position: absolute;
+    width: 3em;
+    background: #00BFFF;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -0.3em;
+}
+
+.hero-bg p{
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+.authentic {
+    margin: 0;
+}
+
+.right-col {
+    text-align: center;
+    margin: 3em 1em;
+}
+
+h2 {
+    text-transform: uppercase;
+    position: relative;
+}
+
+ h2::before{
+    content: ' ';
+    position: absolute;
+    width: 8em;
+    background: #00BFFF;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -0.3em;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    line-height: var(--leading); /*see first self defined one*/
+}
+
+.third_block {
+    padding: 2em;
+    background-color: wheat;
+    margin: 0;
+}
+
+.third_block ul li {
+    line-height: var(--leading); 
+}
+
+@media (min-width: 730px) {
+    section{
+        margin: 0 4em;
+    }
+}
+
+@media (min-width: 930px) {
+    .hero-bg{
+        text-align: left;
+    }
+
+    .hero-bg p {
+        font-weight: bold;
+        margin: 0 0 3em;
+    }
+
+    .hero-bg section {
+        width: 65%;
+    }
+
+    .hero-bg p {
+        margin-bottom: 0;
+    }
+
+    section.authentic {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+            "bowl content";
+    }
+
+    .right-col {
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+
+    img {
+        grid-area: bowl;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.top {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
