@@ -35,20 +35,20 @@ Step - 7:
 After doing the 7 steps :
   Download our code (i.e the zip file).
   Move the zip file to desktop (just for easy purpose).
-  Extract  the zip file. The extracted folder name "may be" : Btech-Project 
+  Extract  the zip file. The extracted folder name "may be" : Btech-Project-main 
   Open command Promt: 
     1. cd Desktop
-    2. cd Btech-Project  (the extracted folder name)
+    2. cd Btech-Project-main  (the extracted folder name)
     3. npm install
   Close command prompt  
   Now open sublime text editor (most probably it will be inside your "Windows" button in desktop......or just search)
-  Open the extracted folder in sublime text " File -> Open Folder -> Desktop -> Btech-Project "
+  Open the extracted folder in sublime text " File -> Open Folder -> Desktop -> Btech-Project-main "
   
   Now open Ganache App (most probably it will be inside your "Windows" button in desktop......or just search)
   Connect Your Metamask with Ganache (Just search in Youtube how to do that) 
   Open command Promt: 
     1. cd Desktop
-    2. cd Btech-Project  (the extracted folder name)
+    2. cd Btech-Project-main  (the extracted folder name)
     3. truffle compile (just make sure solidity code is compiling successfully)
     4. truffle Migrate (Make sure Ganache app is open in background & after migration the transaction count is 4)
     5. npm run start : give 1 min your blockchain app will open in browser.
